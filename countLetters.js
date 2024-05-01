@@ -52,7 +52,7 @@ const countLetters = function(string) {
   let output = {};
   for (let letter of string) { 
     if (!output[letter]) { 
-      output[letter] = 0;
+      output[letter] = 1;
     } else {
     output[letter]++; 
     }
@@ -61,4 +61,4 @@ const countLetters = function(string) {
 } 
 
 //Test cases
-countLetters(Deposit);
+countLetters('Deposit');
