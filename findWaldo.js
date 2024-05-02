@@ -9,6 +9,15 @@ const findWaldo = function (names, found) {
   }
 };
 
+//Ex2: For each method replaces the for loop
+const findWaldo = function (names, found) {
+  names.forEach(function(item, i) {
+    if (item === "Waldo") {
+      found(i); // execute callback
+    }
+  })
+};
+
 const actionWhenFound = function (i) {
   console.log("Found Waldo at index " + i + "!");
 };
