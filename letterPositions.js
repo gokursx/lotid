@@ -26,5 +26,5 @@ const letterPositions = function (sentence) {
 
 // Test Cases
 const result = letterPositions("Deposit");
-assertArraysEqual(result['d'], [0]);
-assertArraysEqual(result['e'], [1]);
+assertEqual(result['d'], [0]);
+assertEqual(result['e'], [1]);
