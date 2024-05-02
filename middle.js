@@ -22,11 +22,11 @@ const middle = function(array) {
   if (array.length <= 2) {
     return arr1;
   } else if (array.length % 2 == 1) {
-    arr1 += array[(i+1)/2];
+    arr1.push(array(array.length/2));
     return arr1;
   } else if (array.length % 2 == 0) {
-    arr1.push(array[i/2]);
-    arr1.push(array[(i+2)+1]);
+    arr1.push(array(array.length/2-1))
+    arr1.push(array(array.length/2))
     return arr1;
   }
 }
