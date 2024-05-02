@@ -61,4 +61,4 @@ const countLetters = function(string) {
 } 
 
 //Test cases
-countLetters(Deposit);
+countLetters("Deposit");

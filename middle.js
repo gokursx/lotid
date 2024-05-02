@@ -33,4 +33,4 @@ const middle = function(array) {
 
 // TEST CODE
 // ...
-console.log(middle([1, 2, 3, 4]));
+console.log(middle([2, 3, 4]));
