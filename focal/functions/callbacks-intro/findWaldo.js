@@ -15,7 +15,7 @@ const findWaldo = function (names, found) {
     if (item === "Waldo") {
       found(i); // execute callback
     }
-  }
+  })
 };
 
 const actionWhenFound = function (i) {
