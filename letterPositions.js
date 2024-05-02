@@ -11,24 +11,20 @@ const letterPositions = function (sentence) {
   // logic to update results here
   let i =0;
     for(let letter of sentence){
-      if(results[letter]){
-        results[letter].push(i)
-      } 
-      else{
-        results[letter] = [i]
-      }
-    i++
+  if(letter !== ' '){
+    if(results[letter]){
+      results[letter].push(i)
+    } 
+    else{
+      results[letter] = [i]
+    }
   }
+  i++
+}
   return results;
 };
 
 // Test Cases
-assertEqual(letterPositions("Deposit"){
-  d: [0],
-  e: [1],
-  p: [2],
-  o: [3],
-  s: [4],
-  i: [5],
-  t: [6]
-});
+const result = letterPositions("Deposit");
+assertEqual(result['d'], [0]);
+assertEqual(result['e'], [1]);

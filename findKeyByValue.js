@@ -2,15 +2,15 @@ const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed: [" ${actual}] === [" ${expected} "]`);
   } else {
-    console.log(`Assertion Failed: [" ${actual}] === [" ${expected} "]`);
+    console.log(`Assertion Failed: [" ${actual}] !== [" ${expected} "]`);
   }
 };
 
 
 const findKeyByValue = function(obj, value){
-  const keysArray = Object.keys(obj);
-  for (let key of keysArray) {
-    if (object[element] === value) 
+  const arr1 = Object.keys(obj);
+  for (let key of arr1) {
+    if (obj[key] === value) 
     return key;
   }
 };
