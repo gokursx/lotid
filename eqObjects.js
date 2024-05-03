@@ -9,6 +9,7 @@ const assertEqual = function(actual, expected) {
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function (object1, object2) {
+  let output = '';
   let keys1 = Object.keys(object1);
   let keys2 = Object.keys(object2);
   if (keys1.length == keys2.length) {
