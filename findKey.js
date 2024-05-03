@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKey = function(object, callback) {
-  for (let key in object) {
+  for (let i = 0, i < object[key].length;i++) {
     if (callback(object[key])) {
       return key;
     }
