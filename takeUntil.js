@@ -1,6 +1,6 @@
 const takeUntil = function(array, callback) {
   let arr1 = [];
-  for (let element of array) {
+  for (let item of array) {
     if (!callback(item)) {
       arr1.push(item);
     }
