@@ -1,6 +1,6 @@
 const words = ["ground", "control", "to", "major", "tom"];
 
-//Map function after refractoring
+//Map function after refactoring
 const map = function (array, callback) {
   const results = [];
   for (let item of array) {
