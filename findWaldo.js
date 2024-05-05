@@ -22,4 +22,5 @@ const actionWhenFound = function (i) {
   console.log("Found Waldo at index " + i + "!");
 };
 
+//Excecuting findWaldo function by inputing actionWhenFound(Callback) function as argument.
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
