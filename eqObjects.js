@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
 const eqObjects = function (object1, object2) {
   let keys1 = Object.keys(object1);
   let keys2 = Object.keys(object2);
-  let output = false;
+  //Checking the both objects have same number of keys
   if (keys1.length == keys2.length) {
     keys1.forEach(element => {
       if (keys2.includes(element) && object1[element] === object2[element]) {
