@@ -1,6 +1,6 @@
 const words = ["ground", "control", "to", "major", "tom"];
 
-
+//Map function after refactoring
 const map = function (array, callback) {
   const results = [];
   for (let item of array) {
@@ -28,4 +28,3 @@ const eqArrays = function(arr1, arr2) {
 //Test case for map
 const results1 = map(words, (word) => word[0]);
 console.log(results1);
-

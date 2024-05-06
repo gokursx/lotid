@@ -28,12 +28,3 @@ const eqObjects = function (object1, object2) {
 console.log(`Example label: ${inspect(actual)}`);
 
 assertObjectsEqual({a: '1', b: 2}, {b: 2, a: '1'});
-
-
-keys1.forEach(item => {
-  if (keys2.includes(item) && object1[item] === object2[item]) {
-    output = true;
-  } else {
-    output = false;
-  }
-});

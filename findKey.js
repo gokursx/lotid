@@ -2,7 +2,11 @@ const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed: [" ${actual}] === [" ${expected} "]`);
   } else {
+<<<<<<< HEAD
     console.log(`Assertion Failed: [" ${actual}] === [" ${expected} "]`);
+=======
+    console.log(`Assertion Failed: [" ${actual}] !== [" ${expected} "]`);
+>>>>>>> 42905b198bbb14bc0e367bd793b258152077dd2e
   }
 };
 
@@ -14,8 +18,7 @@ const findKey = function(object, callback) {
   }
 };
 
-
-findKey(
+const result = findKey(
   {
     "Blue Hill": { stars: 1 },
     Akaleri: { stars: 3 },
@@ -26,3 +29,5 @@ findKey(
   },
   (x) => x.stars === 2
 );
+
+assertEqual(result, "noma");
