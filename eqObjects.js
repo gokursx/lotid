@@ -11,19 +11,16 @@ const assertEqual = function(actual, expected) {
 const eqObjects = function (object1, object2) {
   let keys1 = Object.keys(object1);
   let keys2 = Object.keys(object2);
-  //Checking the both objects have same number of keys
   if (keys1.length == keys2.length) {
-    keys1.forEach(element => {
-      if (keys2.includes(element) && object1[element] === object2[element]) {
-        result = true;
-      } else if (Array.isArray(object1[element]) && Array.isArray(object2[element])) {
-        result = eqArrays(object1[element], object2[element]);
+    keys1.forEach(item => {
+      if (keys2.includes(item) && object1[item] === object2[item]) {
+        output = true;
       } else {
-        result = false;
+        output = false;
       }
     });
   }
-  return result;
+  return output;
 };
 
 const shirtObject = { color: "red", size: "medium" };
