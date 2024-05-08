@@ -1,7 +1,7 @@
 // tailTest.js
 
 const assertEqual = require("../assertEqual");
-const head = require("../tail");
+const tail = require("../tail");
 
 // Testing code
 assertEqual(tail([5, 6, 7]), 5);
